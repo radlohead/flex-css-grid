@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sizingGridItems</title>
+    <style>
+        #root {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item1 {
+            display: flex;
+            height: 70px;
+        }
+
+        .item1__item {
+            flex: 1;
+        }
+
+        .item1__item1 {
+            background-color: magenta;
+        }
+        .item1__item2 {
+            background-color: red;
+        }
+
+        .item2 {
+            height: 100px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <section class="item1">
+            <div class="item1__item item1__item1"></div>
+            <div class="item1__item item1__item2"></div>
+        </section>
+        <section class="item2"></section>
+    </div>
+</body>
+</html>
