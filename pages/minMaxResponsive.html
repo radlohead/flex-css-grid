@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>minMaxResponsive</title>
+    <style>
+        .item1 {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+            background-color: yellow;
+        }
+        .item2 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 80%;
+            height: 90%;
+            background-color: red;
+        }
+        .item3 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 70%;
+            height: 50%;
+            background-color: magenta;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <section class="item1">
+            <section class="item2">
+                <section class="item3"></section>
+            </section>
+        </section>
+    </div>
+</body>
+</html>
