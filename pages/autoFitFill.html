@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>autoFitFill</title>
+    <style>
+        #root {
+            display: flex;
+        }
+
+        .item1,
+        .item2 {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            height: 150px;
+            margin-left: 20px;
+            border: 1px dotted #000;
+        }
+
+        .item1 {
+            margin-left: 0;
+        }
+
+        .item1__list,
+        .item2__list {
+            position: relative;
+            display: flex;
+            flex: 1;
+            padding: 0;
+            list-style: none;
+            border: 1px solid #000;
+        }
+
+        .item1__list li,
+        .item2__list li {
+            width: 20%;
+            height: 50px;
+            margin: 0 10px;
+            background-color: yellow;
+            border: 1px dotted #000;
+        }
+
+        .item2__list li:last-child {
+            position: absolute;
+            right: 0;
+            width: 20%;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <section class="item1">
+            <ul class="item1__list">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section class="item2">
+            <ul class="item2__list">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
