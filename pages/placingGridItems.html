@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>placingGridItems</title>
+    <style>
+        .item1,
+        .item2 {
+            display: flex;
+            padding: 0;
+            border: 1px dotted #000;
+        }
+
+        .item1 li {
+            flex: 1;
+            height: 100px;
+            list-style: none;
+            background-color: magenta;
+            border: 1px solid #000;
+        }
+
+        .item1 li:first-child {
+            background-color: yellow;
+        }
+
+        .item2 li {
+            flex: 1;
+            height: 50px;
+            list-style: none;
+            background-color: magenta;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <ul class="item1">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul class="item2">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>
