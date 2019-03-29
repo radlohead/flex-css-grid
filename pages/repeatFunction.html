@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>repeatFunction</title>
+    <style>
+        .item__list {
+            display: flex;
+            border: 1px dotted #000;
+        }
+
+        .item__list li {
+            flex: 1;
+            height: 100px;
+            list-style: none;
+            border: 1px dotted #000;
+            background-color: yellow;
+        }
+
+        .item__list li:nth-child(even) {
+            flex: 2;
+            margin: 0 10px;
+            background-color: red;
+        }
+
+        .item__list li:last-child {
+            flex: 3;
+            background-color: magenta;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <section class="item">
+            <ul class="item__list">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
