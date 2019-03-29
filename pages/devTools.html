@@ -5,8 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devTools</title>
+    <style>
+        #root {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .item1 {
+            display: flex;
+            height: 200px;
+            border: 1px solid #000;
+        }
+
+        .item1__lists {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin: auto;
+            width: 100%;
+            height: 50px;
+            padding: 0 50px;
+            border: 1px dotted #000;
+        }
+
+        .item1__lists li {
+            flex: 1;
+            margin: 0 15px;
+            list-style: none;
+            border: 1px solid #bdbdbd;
+        }
+
+        .item2 {
+            display: flex;
+            height: 150px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+
+        .item2__item1 {
+            flex: 2;
+            height: 100%;
+            border: 1px solid #000;
+        }
+
+        .item2__item2 {
+            flex: 1;
+            height: 100%;
+            border: 1px solid #000;
+        }
+    </style>
 </head>
 <body>
-    devTools
+    <div id="root">
+        <section class="item1">
+            <ul class="item1__lists">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section class="item2">
+            <section class="item2__item1"></section>
+            <section class="item2__item2"></section>
+        </section>
+    </div>
 </body>
 </html>
