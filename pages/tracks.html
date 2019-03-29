@@ -5,8 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>tracks</title>
+    <style>
+        #root {
+            display: flex;
+        }
+
+        .item {
+            flex: 1;
+            margin-top: auto;
+            margin-left: 10%;
+            height: 100px;
+            border: 1px solid #000;
+        }
+
+        .item:first-child {
+            margin-left: 0;
+        }
+
+        .item3 {
+            height: 200px;
+        }
+    </style>
 </head>
 <body>
-    tracks
+    <div id="root">
+        <section class="item item1"></section>
+        <section class="item item2"></section>
+        <section class="item item3"></section>
+    </div>
 </body>
 </html>
