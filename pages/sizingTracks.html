@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sizingTracks</title>
+    <style>
+        #root {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            border: 1px solid #000;
+        }
+        
+        .item {
+            display: flex;
+            flex: 1;
+            height: 100px;
+            border: 1px dotted #000;
+        }
+
+        .item1__item {
+            flex-basis: 50%;
+            height: 100px;
+            background-color: red;
+        }
+
+        .item2__item1 {
+            flex: 1;
+            background-color: orange;
+        }
+        .item2__item2 {
+            flex: 3;
+            margin: 0 15px;
+            background-color: magenta;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <section class="item item1">
+            <div class="item1__item"></div>
+        </section>
+        <section class="item item2">
+            <div class="item2__item1"></div>
+            <div class="item2__item2"></div>
+        </section>
+    </div>
+</body>
+</html>
