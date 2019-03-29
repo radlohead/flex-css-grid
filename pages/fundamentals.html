@@ -5,8 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>fundamentals</title>
+    <style>
+        #root {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        .item1 {
+            flex: 2;
+            height: 200px;
+            border: 1px solid #000;
+        }
+
+        .item2 {
+            position: relative;
+            flex: 1;
+            height: 200px;
+            padding: 10px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+
+        .item2__child1 {
+            height: 60px;
+            border: 1px solid #000;
+        }
+
+        .item2__child2 {
+            position: absolute;
+            bottom: 10px;
+            width: calc(100% - 20px);
+            height: 90px;
+            border: 1px solid #000;
+        }
+    </style>
 </head>
 <body>
-    fundamentals
+    <div id="root">
+        <section class="item1"></section>
+        <section class="item2">
+            <div class="item2__child1"></div>
+            <div class="item2__child2"></div>
+        </section>
+    </div>
 </body>
 </html>
