@@ -5,8 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>starterFiles</title>
+    <style>
+        #root {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .item {
+            flex-basis: 30%;
+            height: 100px;
+            margin-left: 5%;
+            border: 1px solid #bdbdbd;
+            box-sizing: border-box;
+        }
+
+        .item:first-child {
+            margin-left: 0;
+        }
+    </style>
 </head>
 <body>
-    starterFiles
+    <div id="root">
+        <section class="item"></section>
+        <section class="item"></section>
+        <section class="item"></section>
+    </div>
 </body>
 </html>
