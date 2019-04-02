@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fullBleedBlog</title>
+    <style>
+        #root {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .banner-left,
+        .banner-right {
+            display: flex;
+            flex-direction: column;
+            width: 10%;
+        }
+
+        .banner-left-item {
+            height: 50px;
+            margin-top: auto;
+            transform: translateY(-50px);
+            background-color: gray;
+        }
+
+        .banner-right-item {
+            height: 50px;
+            margin-bottom: auto;
+            transform: translateY(50px);
+            background-color: gray;
+        }
+
+        .item {
+            display: flex;
+            flex-flow: column wrap;
+            width: 80%;
+        }
+
+        .item_1,
+        .item_2,
+        .item_3 {
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+
+        .item_1 {
+            height: 50px;
+            background-color: red;
+        }
+        .item_2 {
+            height: 100px;
+            background-color: magenta;
+        }
+        .item_3 {
+            height: 150px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <aside class="banner-left">
+            <div class="banner-left-item"></div>
+        </aside>
+        <section class="item">
+            <div class="item_1"></div>
+            <div class="item_2"></div>
+            <div class="item_3"></div>
+        </section>
+        <aside class="banner-right">
+            <div class="banner-right-item"></div>
+        </aside>
+    </div>
+</body>
+</html>
