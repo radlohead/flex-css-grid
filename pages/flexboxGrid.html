@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flexboxGrid</title>
+    <style>
+        #root {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item1 {
+            display: flex;
+            width: 50%;
+        }
+
+        .item1-list {
+            display: flex;
+            flex-flow: row nowrap;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .item1-list li {
+            width: 30%;
+            height: 100px;
+            border: 1px solid #000;
+        }
+
+        .item2 {
+            display: flex;
+            flex-flow: column wrap;
+            width: 50%;
+        }
+
+        .item2_1 {
+            display: flex;
+            height: 30px;
+        }
+        .item2_2 {
+            display: flex;
+            height: 60px;
+            margin-top: auto;
+        }
+
+        .item2_1_1 {
+            flex-basis: 30%;
+            background-color: red;
+        }
+        .item2_1_2 {
+            flex-basis: 70%;
+            background-color: magenta;
+        }
+
+        .item2_2_1 {
+            flex-basis: 70%;
+            background-color: yellow;
+        }
+        .item2_2_2 {
+            flex-basis: 30%;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <section class="item1">
+            <ul class="item1-list">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section class="item2">
+            <div class="item2_1">
+                <span class="item2_1_1"></span>
+                <span class="item2_1_2"></span>
+            </div>
+            <div class="item2_2">
+                <span class="item2_2_1"></span>
+                <span class="item2_2_2"></span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
