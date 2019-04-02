@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>gridImageGallery</title>
+    <style>
+        #root {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item {
+            display: flex;
+            flex-flow: column wrap;
+            width: 30%;
+        }
+
+        .item1_1 {
+            height: 50px;
+            background-color: yellow;
+        }
+
+        .item1_2 {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item1_2_1 {
+            flex-grow: 1;
+            height: 100px;
+            background-color: magenta;
+        }
+        .item1_2_2 {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        .item1_2_2_1 {
+            width: 50%;
+            height: 30px;
+            background-color: gray;
+        }
+        .item1_2_2_2 {
+            width: 100%;
+            height: 50px;
+            margin-top: auto;
+            background-color: red;
+        }
+
+        .item2 {
+            justify-content: center;
+            width: 10%;
+        }
+
+        .item2_1 {
+            width: 100%;
+            height: 50px;
+            background-color: magenta;
+        }
+
+        .item3_1 {
+            height: 50px;
+            background-color: red;
+        }
+
+        .item3_2 {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item3_2_1 {
+            display: flex;
+            flex-flow: column wrap;
+            width: 50%;
+            height: 100px;
+        }
+
+        .item3_2_2 {
+            display: flex;
+            flex-flow: column wrap;
+            width: 50%;
+            height: 100px;
+        }
+
+        .item3_2_1_1 {
+            width: 50%;
+            height: 30px;
+            margin-left: auto;
+            background-color: yellow;
+        }
+
+        .item3_2_1_2 {
+            height: 50px;
+            margin-top: auto;
+            background-color: gray;
+        }
+
+        .item3_2_2_1 {
+            height: 50px;
+            background-color: magenta;
+        }
+        .item3_2_2_2 {
+            height: 30px;
+            margin-top: auto;
+            background-color: yellow;
+        }
+
+        .item4_1 {
+            height: 50px;
+            background-color: gray;
+        }
+        .item4_2 {
+            height: 100px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <section class="item item1">
+            <div class="item1_1"></div>
+            <div class="item1_2">
+                <span class="item1_2_1"></span>
+                <span class="item1_2_2">
+                    <span class="item1_2_2_1"></span>
+                    <span class="item1_2_2_2"></span>
+                </span>
+            </div>
+        </section>
+        <section class="item item2">
+            <div class="item2_1"></div>
+        </section>
+        <section class="item item3">
+                <div class="item3_1"></div>
+                <div class="item3_2">
+                    <span class="item3_2_1">
+                        <span class="item3_2_1_1"></span>
+                        <span class="item3_2_1_2"></span>
+                    </span>
+                    <span class="item3_2_2">
+                        <span class="item3_2_2_1"></span>
+                        <span class="item3_2_2_2"></span>
+                    </span>
+                </div>
+        </section>
+        <section class="item item4">
+            <div class="item4_1"></div>
+            <div class="item4_2"></div>
+        </section>
+    </div>
+</body>
+</html>
