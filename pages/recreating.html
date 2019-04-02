@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>recreating</title>
+    <style>
+        #root {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+
+        .item1 {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            height: 50px;
+        }
+
+        .item1 li {
+            flex-grow: 1;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+
+        .item2 {
+            height: 100px;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <ul class="item1">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <section class="item2"></section>
+    </div>
+</body>
+</html>
