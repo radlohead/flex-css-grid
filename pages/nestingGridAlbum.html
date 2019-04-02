@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>nestingGridAlbum</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #root {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        .item {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width: 50%;
+        }
+
+        .item-img {
+            flex-grow: 2;
+            height: 100px;
+            border: 1px solid #000;
+        }
+
+        .item-list {
+            flex-grow: 3;
+            height: 100px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .item-list li {
+            height: 50px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <section class="item">
+            <div class="item-img"></div>
+            <ul class="item-list">
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section class="item">
+            <div class="item-img"></div>
+            <ul class="item-list">
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
