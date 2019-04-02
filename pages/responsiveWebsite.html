@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>responsiveWebsite</title>
+    <style>
+        #root {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .item {
+            margin-top: auto;
+            margin-left: 10px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+
+        .item1 {
+            flex-grow: 1;
+            height: 50px;
+            margin-left: 0;
+            background-color: red;
+        }
+        .item2 {
+            flex-grow: 2;
+            height: 100px;
+            background-color: magenta;
+        }
+        .item3 {
+            flex-grow: 3;
+            height: 75px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <section class="item item1"></section>
+        <section class="item item2"></section>
+        <section class="item item3"></section>
+    </div>
+</body>
+</html>
