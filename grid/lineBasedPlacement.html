@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>lineBasedPlacement</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .list {
+                display: grid;
+                grid-template-columns: calc(33.33% - 10px) 33.33% 33.33%;
+                grid-gap: 5px;
+                margin: 10px;
+                list-style: none;
+            }
+
+            .list li {
+                padding: 20px;
+                border: 1px solid #bdbdbd;
+                box-sizing: border-box;
+            }
+
+            .list__item1 {
+                grid-column-start: 2;
+                grid-row-start: 1;
+            }
+            .list__item2 {
+                grid-column-start: 2;
+                grid-row-start: 2;
+            }
+            .list__item3 {
+                grid-column-start: 3;
+                grid-row-start: 2;
+            }
+            .list__item5 {
+                grid-column-start: 1;
+                grid-row-start: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="list">
+            <li class="list__item1">A</li>
+            <li class="list__item2">B</li>
+            <li class="list__item3">C</li>
+            <li class="list__item4">D</li>
+            <li class="list__item5">E</li>
+            <li class="list__item6">F</li>
+        </ul>
+    </body>
+</html>
