@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>layeringItms</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .root {
+                display: grid;
+                grid-template-columns: 20% 20% 40% auto;
+                grid-gap: 10px;
+            }
+            .item {
+                padding: 20px;
+                border: 1px solid #bdbdbd;
+                box-sizing: border-box;
+            }
+            .a {
+                grid-column: 1 / 3;
+            }
+            .b {
+                grid-column: 3 / end;
+            }
+            .c {
+                grid-column: 1;
+                grid-row: 2;
+            }
+            .d {
+                grid-column: 2 / 4;
+                grid-row: 2;
+                background-color: #444;
+            }
+            .e {
+                grid-column: 1 / end;
+                grid-row: 3;
+            }
+            .f {
+                grid-column: 3 / end;
+                grid-row: 2;
+                background-color: rgba(49, 121, 207, 0.5);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="root">
+            <section class="item a">A</section>
+            <section class="item b">B</section>
+            <section class="item c">C</section>
+            <section class="item d">D</section>
+            <section class="item e">E</section>
+            <section class="item f">F</section>
+        </div>
+    </body>
+</html>
