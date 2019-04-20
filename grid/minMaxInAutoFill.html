@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>minMaxInAutoFill</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .list {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                grid-gap: 10px;
+                list-style: none;
+            }
+            .list__item {
+                padding: 20px;
+                border: 1px solid #000;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="root">
+            <ul class="list">
+                <li class="list__item list__item1">1</li>
+                <li class="list__item list__item2">2</li>
+                <li class="list__item list__item3">3</li>
+                <li class="list__item list__item4">4</li>
+                <li class="list__item list__item5">5</li>
+                <li class="list__item list__item6">6</li>
+                <li class="list__item list__item7">7</li>
+                <li class="list__item list__item8">8</li>
+                <li class="list__item list__item9">9</li>
+            </ul>
+        </div>
+    </body>
+</html>
