@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>ImplicitNamed</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .root {
+                display: grid;
+                grid-template-columns: 30% 70%;
+            }
+            .header,
+            .sidebar,
+            .content {
+                padding: 20px;
+                border: 1px solid #000;
+            }
+            .sidebar {
+                grid-column: 1;
+                grid-row: 2;
+                margin-top: 10px;
+                margin-right: 10px;
+            }
+            .content {
+                grid-column: 2 / end;
+                grid-row: 1 / 3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="root">
+            <header class="header">header</header>
+            <aside class="sidebar">sidebar</aside>
+            <section class="content">overlay</section>
+        </div>
+    </body>
+</html>
