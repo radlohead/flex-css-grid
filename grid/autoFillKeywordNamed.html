@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>colFillKeywordNamed</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .list {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, [col] 100px);
+                grid-template-rows: repeat(auto-fill, [row] col);
+                grid-gap: 10px;
+                list-style: none;
+            }
+            .list__item {
+                padding: 20px;
+                border: 1px solid #000;
+            }
+            .a {
+                grid-column: col / span 2;
+                grid-row: row 1;
+            }
+            .b {
+                grid-column: col 3 / span 2;
+                grid-row: row 1;
+            }
+            .c {
+                grid-column: col;
+                grid-row: row 2;
+            }
+            .d {
+                grid-column: col 2 / span 3;
+                grid-row: row 2;
+            }
+            .e {
+                grid-column: col / span 4;
+                grid-row: row 3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="root">
+            <ul class="list">
+                <li class="list__item a">A</li>
+                <li class="list__item b">B</li>
+                <li class="list__item c">C</li>
+                <li class="list__item d">D</li>
+                <li class="list__item e">E</li>
+            </ul>
+        </div>
+    </body>
+</html>
