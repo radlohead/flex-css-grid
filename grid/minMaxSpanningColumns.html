@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>minMaxSpanningColumns</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .list {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                grid-gap: 10px;
+                list-style: none;
+            }
+            .list__item {
+                padding: 20px;
+                border: 1px solid #000;
+            }
+            .a {
+                grid-column: auto / span 2;
+            }
+            .g {
+                grid-column: auto / span 2;
+                grid-row: auto / span 2;
+            }
+            .k {
+                grid-column: auto / span 3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="root">
+            <ul class="list">
+                <li class="list__item a">A</li>
+                <li class="list__item b">B</li>
+                <li class="list__item c">C</li>
+                <li class="list__item d">D</li>
+                <li class="list__item e">E</li>
+                <li class="list__item f">F</li>
+                <li class="list__item g">G</li>
+                <li class="list__item h">H</li>
+                <li class="list__item i">I</li>
+                <li class="list__item j">J</li>
+                <li class="list__item k">K</li>
+                <li class="list__item l">L</li>
+                <li class="list__item m">M</li>
+            </ul>
+        </div>
+    </body>
+</html>
