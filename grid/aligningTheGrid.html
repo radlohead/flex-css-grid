@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>aligningTheGrid</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .list {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, [col] 50px);
+                grid-gap: 10px;
+                list-style: none;
+            }
+            .list__item {
+                padding: 10px;
+                border: 1px solid #000;
+            }
+            .list__item1 {
+                grid-column: col / span 4;
+                grid-row: 1;
+            }
+            .list__item2 {
+                grid-column: col / span 2;
+                grid-row: 2 / 4;
+            }
+            .list__item3 {
+                grid-column: col 3 / span 2;
+                grid-row: 2;
+            }
+            .list__item4 {
+                grid-column: col 3 / span 1;
+                grid-row: 3;
+            }
+            .list__item5 {
+                grid-column: col 4 / span 1;
+                grid-row: 3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="root">
+            <ul class="list">
+                <li class="list__item list__item1">One</li>
+                <li class="list__item list__item2">Two</li>
+                <li class="list__item list__item3">Three</li>
+                <li class="list__item list__item4">Four</li>
+                <li class="list__item list__item5">Five</li>
+            </ul>
+        </div>
+    </body>
+</html>
