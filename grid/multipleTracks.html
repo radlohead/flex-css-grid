@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>multiple tracks</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            ul {
+                list-style: none;
+            }
+            .list__wrapper {
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr 2fr 2fr;
+                height: 200px;
+            }
+            .list {
+                display: grid;
+                grid-template-rows: 30px 1fr 1fr;
+            }
+            .list li {
+                border: 1px solid #bdbdbd;
+            }
+            .list1 li,
+            .list3 li {
+                background-color: #777;
+            }
+            .list2 li,
+            .list4 li {
+                background-color: #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="root">
+            <section class="list__wrapper">
+                <ul class="list list1">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+                <ul class="list list2">
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                </ul>
+                <ul class="list list3">
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                </ul>
+                <ul class="list list4">
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                </ul>
+            </section>
+        </div>
+    </body>
+</html>
