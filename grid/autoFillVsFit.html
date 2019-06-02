@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>autoFillVsFit</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            ul {
+                list-style: none;
+            }
+            ul li:nth-child(odd) {
+                background-color: #777;
+            }
+            ul li:nth-child(even) {
+                background-color: #ddd;
+            }
+            ul li {
+                height: 50px;
+                border: 1px solid #bdbdbd;
+            }
+            .list1 {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                grid-column-gap: 10px;
+            }
+            .list2 {
+                display: grid;
+                grid-template-columns: repeat(
+                    auto-fill,
+                    minmax(calc(33.33% - 20px), 1fr)
+                );
+                grid-column-gap: 10px;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="root">
+            <ul class="list1">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+            <ul class="list2">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+    </body>
+</html>
