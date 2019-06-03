@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>paddingIsHonored</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .box__item {
+                margin: 5px;
+                background-color: #777;
+                border: 1px solid #bdbdbd;
+            }
+            .box__item2 {
+                background-color: #ddd;
+                border: 1px solid #bdbdbd;
+            }
+            .root {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+            }
+            .box1 {
+                display: flex;
+            }
+            .box1__1 {
+                flex: 3;
+                margin-right: 150px;
+            }
+            .box1__2 {
+                flex: 1;
+            }
+            .box2 {
+                display: flex;
+            }
+            .box2__1 {
+                flex: 1;
+            }
+            .box2__2 {
+                display: grid;
+                gap: 10px;
+                grid-template-columns: repeat(5, 50px);
+                grid-template-rows: repeat(2, minmax(50px, auto));
+                flex: 3;
+                padding: 50px;
+            }
+            .box2__2__1 {
+                grid-column: 1;
+                grid-row: 1 / 3;
+            }
+            .box2__2__2 {
+                grid-column: 2 / 2 end;
+            }
+            .box2__2__3 {
+                grid-column: end;
+                grid-row: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="root">
+            <div class="box box1">
+                <div class="box__item box1__1">A</div>
+                <div class="box__item box1__2">B</div>
+            </div>
+            <div class="box box2">
+                <div class="box__item box2__1">C</div>
+                <div class="box__item box2__2">
+                    <div class="box__item2 box2__2__1">E</div>
+                    <div class="box__item2 box2__2__2">F</div>
+                    <div class="box__item2 box2__2__3">G</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
