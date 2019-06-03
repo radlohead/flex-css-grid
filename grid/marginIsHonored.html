@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>marginIsHonored</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .box {
+                background-color: #777;
+                border: 1px solid #bdbdbd;
+                box-sizing: border-box;
+            }
+            .box__item {
+                background-color: #ddd;
+                border: 1px solid #bdbdbd;
+                box-sizing: border-box;
+            }
+            .root {
+                display: grid;
+                grid-template-columns: repeat(4, 25%);
+                grid-template-rows: repeat(2, minmax(100px, auto));
+            }
+            .box1 {
+                grid-column: 1 / 3;
+            }
+            .box2 {
+                grid-column: 4;
+            }
+            .box3 {
+                grid-column: 1;
+            }
+            .box4 {
+                display: grid;
+                gap: 10px;
+                grid-template-columns: subgrid;
+                grid-template-rows: subgrid;
+                grid-column: 2 / 5;
+                margin: 20px;
+            }
+            .box4__1 {
+                grid-column: 1;
+                grid-row: 1 / 3;
+            }
+            .box4__2 {
+                grid-column: 2 / 4;
+            }
+            .box4__3 {
+                grid-column: 3;
+                grid-row: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="root">
+            <div class="box box1">A</div>
+            <div class="box box2">B</div>
+            <div class="box box3">C</div>
+            <div class="box box4">
+                <div class="box__item box4__1">E</div>
+                <div class="box__item box4__2">F</div>
+                <div class="box__item box4__3">G</div>
+            </div>
+        </div>
+    </body>
+</html>
