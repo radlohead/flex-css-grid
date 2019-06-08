@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>nestedGrid</title>
+        <style>
+            .root {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .box {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+            }
+            .box-header {
+                min-height: 50px;
+                border: 1px solid #000;
+                margin: 5px;
+                flex-grow: 1;
+            }
+            .box-main {
+                border: 1px solid #000;
+                margin: 5px;
+                min-height: 50px;
+            }
+            .box-main2 {
+                display: flex;
+                flex-wrap: wrap;
+                flex-grow: 3;
+                padding: 10px;
+            }
+            .box-main-child {
+                margin: 5px;
+                padding: 5px;
+                border: 1px solid #000;
+                box-sizing: border-box;
+                background-color: #ddd;
+            }
+            .box-main-child1 {
+                flex-basis: 100%;
+            }
+            .box-main-child2 {
+                flex-basis: calc(50% - 10px);
+            }
+            .box-main-child3 {
+                flex-basis: calc(50% - 10px);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="root">
+            <article class="box box1">
+                <header class="box-header">A</header>
+                <main class="box-main">C</main>
+            </article>
+            <article class="box box2">
+                <header class="box-header">B</header>
+                <main class="box-main box-main2">
+                    <div class="box-main-child box-main-child1">E</div>
+                    <div class="box-main-child box-main-child2">F</div>
+                    <div class="box-main-child box-main-child3">G</div>
+                </main>
+            </article>
+        </div>
+    </body>
+</html>
