@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>no scroll full layout</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .wrap {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border: 1px solid #000;
+            }
+            .map__wrap {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: flex-end;
+                height: 100%;
+                border: 1px solid #666;
+            }
+            .list__panel,
+            .map {
+                height: calc(100% - 100px);
+                border: 1px solid #bdbdbd;
+            }
+            .list__panel {
+                flex: 1;
+            }
+            .map {
+                flex: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="map__wrap">
+                <div class="list__panel">list panel</div>
+                <div class="map">map</div>
+            </div>
+        </div>
+    </body>
+</html>
