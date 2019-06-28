@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>text loss</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            ul {
+                display: inline-flex;
+                flex-direction: column;
+                max-width: 100%;
+                list-style: none;
+            }
+            li {
+                width: 200px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                flex: 1;
+                margin: 5px;
+                border: 1px solid #bdbdbd;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="root">
+            <ul class="list">
+                <li class="list__text_01">조건에 맞는 총 1개의 매물</li>
+                <li class="list__text_02">
+                    조건에 맞는 총 10000000000개의 매물
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
