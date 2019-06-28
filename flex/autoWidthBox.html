@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>auto width box</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            .box__list {
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+            }
+            .box {
+                flex: 0 1 auto;
+                max-width: 300px;
+                padding: 5px;
+                margin: 5px;
+                border: 1px solid #bdbdbd;
+            }
+            .box:last-child {
+                order: -1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="root">
+            <ul class="box__list">
+                <li class="box">ABC</li>
+                <li class="box">ABCDE</li>
+                <li class="box">ABCDEFG</li>
+                <li class="box">ABCDEFGHIJKLM</li>
+            </ul>
+        </div>
+    </body>
+</html>
