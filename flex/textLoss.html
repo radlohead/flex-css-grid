@@ -11,29 +11,68 @@
                 margin: 0;
             }
             ul {
-                display: inline-flex;
+                display: flex;
                 flex-direction: column;
                 max-width: 100%;
                 list-style: none;
             }
             li {
-                width: 200px;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
+                display: inline-flex;
                 flex: 1;
                 margin: 5px;
                 border: 1px solid #bdbdbd;
                 font-family: Arial, Helvetica, sans-serif;
+            }
+            h1 {
+                width: 200px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-size: 14px;
+            }
+            .icons {
+                display: inline-flex;
+                flex-direction: row;
+            }
+            .icons__icon {
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            .icons__icon_01 {
+                width: 58px;
+                height: 36px;
+                background-image: url(/images/icon-v2_01.png);
+            }
+            .icons__icon_02 {
+                width: 96px;
+                height: 40px;
+                background-image: url(/images/icon-v2_02.png);
+            }
+            .icons__icon_03 {
+                width: 64px;
+                height: 42px;
+                background-image: url(/images/icon-v2_03.png);
             }
         </style>
     </head>
     <body>
         <div class="root">
             <ul class="list">
-                <li class="list__text_01">조건에 맞는 총 1개의 매물</li>
+                <li class="list__text_01">
+                    <h1>조건에 맞는 총 1개의 매물</h1>
+                    <div class="icons">
+                        <span class="icons__icon icons__icon_01"></span>
+                        <span class="icons__icon icons__icon_02"></span>
+                        <span class="icons__icon icons__icon_03"></span>
+                    </div>
+                </li>
                 <li class="list__text_02">
-                    조건에 맞는 총 10000000000개의 매물
+                    <h1>조건에 맞는 총 10000000000개의 매물</h1>
+                    <div class="icons">
+                        <img src="/images/icon-v2_01.png" alt="" />
+                        <img src="/images/icon-v2_02.png" alt="" />
+                        <img src="/images/icon-v2_03.png" alt="" />
+                    </div>
                 </li>
             </ul>
         </div>
