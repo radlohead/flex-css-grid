@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>up down rolling list</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            .rolling__wrap {
+                display: flex;
+                flex-direction: row;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                margin: 0 10px;
+                list-style: none;
+            }
+            .rolling__wrap__list__item:before {
+                content: '';
+                display: block;
+                width: 100px;
+                height: 100px;
+                background-color: #999;
+            }
+            .rolling__wrap__list__item {
+                height: 150px;
+                margin: 10px 0;
+                border: 1px solid #bdbdbd;
+                background-color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="root">
+            <section class="rolling__wrap">
+                <ul class="rolling__wrap__list">
+                    <li class="rolling__wrap__list__item">title1</li>
+                    <li class="rolling__wrap__list__item">title2</li>
+                </ul>
+                <ul class="rolling__wrap__list">
+                    <li class="rolling__wrap__list__item">title3</li>
+                    <li class="rolling__wrap__list__item">title4</li>
+                </ul>
+                <ul class="rolling__wrap__list">
+                    <li class="rolling__wrap__list__item">title5</li>
+                    <li class="rolling__wrap__list__item">title6</li>
+                </ul>
+            </section>
+        </div>
+    </body>
+</html>
