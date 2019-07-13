@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>formTitleVerticalAlign</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            .form-list {
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+            }
+            .form-list li {
+                display: flex;
+                align-items: center;
+            }
+            label {
+                width: 120px;
+                border: 1px solid #bdbdbd;
+            }
+            input {
+                padding: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="root">
+            <ul class="form-list">
+                <li>
+                    <label for="title">타이틀 중앙정렬</label>
+                    <input
+                        type="text"
+                        placeholder="타이틀 2줄이상일때 중앙정렬 텍스트"
+                    />
+                </li>
+                <li>
+                    <label for="title">title is multiple line</label>
+                    <input
+                        type="text"
+                        size="50"
+                        placeholder="타이틀 2줄이상일때 중앙정렬 텍스트 타이틀 2줄이상일때 중앙정렬 텍스트 타이틀 2줄이상일때 중앙정렬 텍스트"
+                    />
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
