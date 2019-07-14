@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>이미지 없을때 기본 높이값</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            .root {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            .img-box {
+                max-width: 300px;
+                min-height: 0;
+                flex-basis: 300px;
+                border: 1px solid #bdbdbd;
+            }
+            img {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="root">
+            <section class="img-box">
+                <!-- <img src="../images/cafeLatte.png" alt="" /> -->
+            </section>
+        </div>
+    </body>
+</html>
